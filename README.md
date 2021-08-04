@@ -1,2 +1,2 @@
 # HtmlBasicTags
-Html page to understand basic html page
+Html page to understand basic html tags
