@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- This is an internal css -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&family=Merriweather+Sans:ital,wght@1,300&display=swap");
+      body {
+        background-color: #fdf6f0;
+        font-family: "Merriweather Sans", sans-serif;
+      }
+      h1 {
+        display: inline-block;
+      }
+      a {
+        color: #ff4848;
+        text-decoration: none;
+      }
+      .discription {
+        color: #ffa0a0;
+
+        padding: 15px;
+        display: inline-block;
+      }
+
+      .ucl-top-scorer-table {
+        border-color: #ff4848;
+        border-collapse: collapse;
+        background-color: white;
+      }
+      .ucl-top-scorer-table th {
+        background-color: #ffa0a0;
+        color: #ff4848;
+        font-family: "Hahmlet";
+        padding: 15px;
+        text-align: center;
+      }
+      .ucl-top-scorer-table tr:nth-child(even) {
+        background-color: #ffe3e3;
+      }
+      .ucl-top-scorer-table tr:nth-child(odd) {
+        background-color: #fdf6f0;
+      }
+
+      .ucl-top-scorer-table tr:hover {
+        background-color: #fcd8d4;
+      }
+      .ucl-top-scorer-table td {
+        padding-left: 10px;
+      }
+      .rank-td {
+        text-align: center;
+      }
+      .player-pic-name {
+        list-style-type: none;
+        padding: 0;
+        margin: 1rem;
+        text-align: center;
+      }
+      .player-pic-name li {
+        margin-bottom: 5px;
+      }
+      .player-pic {
+        width: 15rem;
+      }
+      ol {
+        margin-right: 3.125rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- h1 tag with inline style -->
+    <h1 style="color: #ff4848; font-family: 'Hahmlet', serif">Hello World</h1>
+    <!-- p tag with class span and link -->
+    <div class="discription">
+      <p>
+        This page shows
+        <span><a href="https://www.uefa.com/uefachampionsleague/">UCL</a></span>
+        top-scorer!
+      </p>
+      <!-- p tag with text formatting -->
+      <p>Also my <strong>HTML</strong> superpowers!</p>
+    </div>
+    <!-- div tag with class-->
+    <div class="table-container">
+      <!-- table with list and images -->
+      <table class="ucl-top-scorer-table" border="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Rank</th>
+            <th rowspan="2">Player</th>
+            <th colspan="3">Performance</th>
+            <th rowspan="2">Club(s)</th>
+          </tr>
+          <tr>
+            <th>Goals</th>
+            <th>Apps</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank-td">1</td>
+            <td>
+              <ul class="player-pic-name">
+                <li>
+                  <img
+                    class="player-pic"
+                    src="Images/ronaldo.jpg"
+                    alt="Ronaldo-with-UCL-Picture"
+                  />
+                </li>
+                <li>C.Ronaldo</li>
+              </ul>
+            </td>
+            <td>134</td>
+            <td>176</td>
+            <td>0.76</td>
+            <td>
+              <ol>
+                <li>Manchester United</li>
+                <li>Real Madrid</li>
+                <li>Juventus</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank-td">2</td>
+            <td>
+              <ul class="player-pic-name">
+                <li>
+                  <img
+                    class="player-pic"
+                    src="Images/messi.jpg"
+                    alt="Messi-with-UCL-Picture"
+                  />
+                </li>
+                <li>L.Messi</li>
+              </ul>
+            </td>
+            <td>120</td>
+            <td>149</td>
+            <td>0.81</td>
+            <td>
+              <ol>
+                <li>FC Barcelona</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank-td">3</td>
+            <td>
+              <ul class="player-pic-name">
+                <li>
+                  <img
+                    class="player-pic"
+                    src="Images/lewandowski.jpg"
+                    alt="Lewandowski-with-UCL-Picture"
+                  />
+                </li>
+                <li>R.Lewandowski</li>
+              </ul>
+            </td>
+            <td>73</td>
+            <td>96</td>
+            <td>0.76</td>
+            <td>
+              <ol>
+                <li>Borussia Dortmund</li>
+                <li>Bayern Munich</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank-td">4</td>
+            <td>
+              <ul class="player-pic-name">
+                <li>
+                  <img
+                    class="player-pic"
+                    src="Images/benzema.jpg"
+                    alt="Benzema-with-UCL-Picture"
+                  />
+                </li>
+                <li>K.Benzema</li>
+              </ul>
+            </td>
+            <td>71</td>
+            <td>130</td>
+            <td>0.55</td>
+            <td>
+              <ol>
+                <li>Lyon</li>
+                <li>Real Madrid</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank-td">5</td>
+            <td>
+              <ul class="player-pic-name">
+                <li>
+                  <img
+                    class="player-pic"
+                    src="Images/raul.jpg"
+                    alt="Raul-with-UCL-Picture"
+                  />
+                </li>
+                <li>Raul</li>
+              </ul>
+            </td>
+            <td>71</td>
+            <td>142</td>
+            <td>0.50</td>
+            <td>
+              <ol>
+                <li>Real Madrid</li>
+                <li>Schalke 04</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
