@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- To inform the browser about the character encoding that is being used. -->
+    <meta charset="UTF-8" />
+    <!-- I think it is to inform the internet explore browser (if used) to 
+        display content in heighest mode available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Helps our page to display good in all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keyword for search engines -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Canvas, SVG" />
+    <!-- To show the author of this page, as I created it I'm the owner😁 -->
+    <meta name="author" content="Kishore S" />
+    <!-- To describe our website -->
+    <meta
+      name="description"
+      content="This is my seventh assignment. This assignment is for testing my understanding of meta tags, Canvas, and SVG."
+    />
+    <!-- Facebook meta tags -->
+    <!-- og:title for displaying title when our page is shared in facebook -->
+    <meta property="og:title" content="Assignment-7" />
+    <!-- og:description for displaying discription when our page is shared in facebook -->
+    <meta
+      property="og:description"
+      content="This is my seventh assignment. This assignment is for testing my understanding of meta tags, Canvas, and SVG."
+    />
+    <!-- Twitter meta tags -->
+    <!-- twitter:title for displaying title when our page is shared in facebook -->
+    <meta name="twitter:title" content="Assignment-7" />
+    <!-- twitter:description for displaying discription when our page is shared in facebook -->
+    <meta
+      name="twitter:description"
+      content="This is my seventh assignment. This assignment is for testing my understanding of meta tags, Canvas, and SVG."
+    />
+    <title>Assignment-7</title>
+  </head>
+  <body>
+    <h1>SVG image and Canvas</h1>
+    <p>Svg stands for Scalable Vector Graphics</p>
+    <p>Picture below is example for SVG</p>
+    <img
+      id="macaw-svg"
+      src="assets/images/macaw_1.svg"
+      alt="macaw-svg-image"
+      width="300px"
+      height="300px"
+    />
+    <p>HTML canvas element is used to draw graphics via JavaScript.</p>
+    <canvas
+      id="paint-canvas"
+      width="300px"
+      height="300px"
+      style="border: 1px solid lightgrey"
+    ></canvas>
+    <button onclick="paintCanvas()">Paint here!</button>
+
+    <script>
+      function paintCanvas() {
+        var canvas = document.getElementById("paint-canvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("macaw-svg");
+
+        ctx.drawImage(img, 0, 0);
+      }
+    </script>
+  </body>
+</html>
